@@ -7,7 +7,12 @@ import {
   Switch,
   withRouter,
 } from 'react-router-dom'
-import { Layout, Menu, Spin } from 'antd'
+import {
+  BackTop,
+  Layout,
+  Menu,
+  Spin,
+} from 'antd'
 import { connect } from 'react-redux'
 import type { Node as ReactNode } from 'react'
 
@@ -53,6 +58,8 @@ const App = (props: Props): ReactNode => {
           </Switch>
         </Content>
       </Layout>
+
+      <BackTop />
     </Spin>
   )
 }

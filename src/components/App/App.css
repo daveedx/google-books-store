@@ -22,6 +22,7 @@
 .app-content {
   margin-top: 64px;
   padding: 10px 50px;
+  background: #f0f2f5;
 }
 
 .app-loader {
