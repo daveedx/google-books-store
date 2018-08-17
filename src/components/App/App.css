@@ -23,3 +23,15 @@
   margin-top: 64px;
   padding: 10px 50px;
 }
+
+.app-loader {
+  height: 100%;
+}
+
+.ant-spin-container {
+  height: 100%;
+}
+
+.app-loader.ant-spin-nested-loading > div > .ant-spin {
+  max-height: 100%;
+}
