@@ -18,3 +18,8 @@
 .main-menu {
   align-self: center;
 }
+
+.app-content {
+  margin-top: 64px;
+  padding: 10px 50px;
+}
