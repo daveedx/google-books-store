@@ -1,0 +1,59 @@
+{
+  "name": "google-books-store",
+  "version": "1.0.0",
+  "description": "Google Books Store",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daveedx/google-books-store"
+  },
+  "keywords": [
+    "javascript",
+    "single-page-app",
+    "react",
+    "reactjs",
+    "flow",
+    "flowtype",
+    "googlebooks",
+    "googlebooksapi",
+    "antd",
+    "antdesign"
+  ],
+  "author": "David Bodrogi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/daveedx/google-books-store/issues"
+  },
+  "homepage": "https://github.com/daveedx/google-books-store#readme",
+  "dependencies": {
+    "antd": "^3.8.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-router-redux": "^4.0.8",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-actions": "^2.6.1",
+    "redux-logger": "^3.0.6"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.6",
+    "babel-plugin-import": "^1.8.0",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.0",
+    "flow": "^0.2.3",
+    "flow-bin": "^0.79.0",
+    "react-app-rewired": "^1.5.2"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test --env=jsdom"
+  }
+}
