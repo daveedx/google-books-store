@@ -55,7 +55,7 @@ const SearchList = (props: Props): ReactNode => {
   if (!items.length) {
     return null
   }
-  // items.map(item => console.log(item.saleInfo))
+
   return (
     <Card className="searchlist-container">
       {items.map(
