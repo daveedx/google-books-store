@@ -3,7 +3,7 @@
 import { createAction } from 'redux-actions'
 
 import { calculateStartIndex, fetchBooksByTitle } from './utils'
-import type { SearchResultData, SearchResultState } from '../types'
+import type { Notification, SearchResultData, SearchResultState } from '../types'
 
 export const SHOW_APP_LOADER = 'SHOW_APP_LOADER'
 export const HIDE_APP_LOADER = 'HIDE_APP_LOADER'
@@ -37,6 +37,14 @@ export const searchBooksByTitle = (
     }
 
     dispatch(setSearchResult(props))
+  } else {
+    const notificationProps: Notification = {
+      type: 'error',
+      title: 'Error during search',
+      description: 'Please try again.',
+    }
+
+    dispatch(addNotification(notificationProps))
   }
 
   dispatch(hideAppLoader())

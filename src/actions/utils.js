@@ -28,3 +28,13 @@ export const fetchBooksByTitle = async (title: string, startIndex: number = 0): 
 
   return null
 }
+
+export const fetchBookById = async (volumeId: string): Promise<*> => {
+  try {
+    const url: string = `https://www.googleapis.com/books/v1/volumes/${volumeId}`
+
+    return await axios.get(url)
+  } catch (e) { /* */ }
+
+  return null
+}
