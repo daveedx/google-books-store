@@ -12,11 +12,13 @@ import {
   Layout,
   Menu,
   Spin,
+  Tooltip,
 } from 'antd'
 import { connect } from 'react-redux'
 import type { Node as ReactNode } from 'react'
 
 import HomePage from '../Pages/HomePage'
+import SearchPage from '../Pages/SearchPage'
 import NotFoundPage from '../Pages/NotFoundPage'
 import './App.css'
 import logo from './books.svg'
@@ -37,7 +39,11 @@ const App = (props: Props): ReactNode => {
     >
       <Layout className="app-container">
         <Header className="app-header">
-          <img src={logo} className="logo" alt="logo" title="Google Books Store" />
+          <Link to="/">
+            <Tooltip title="Google Books Store">
+              <img src={logo} className="logo" alt="logo" />
+            </Tooltip>
+          </Link>
 
           <Menu
             className="main-menu"
@@ -48,12 +54,16 @@ const App = (props: Props): ReactNode => {
             <Menu.Item key="menu-home">
               <Link to="/">Home</Link>
             </Menu.Item>
+            <Menu.Item key="menu-search">
+              <Link to="/search">Search</Link>
+            </Menu.Item>
           </Menu>
         </Header>
 
         <Content className="app-content">
           <Switch>
             <Route path="/" exact component={HomePage} />
+            <Route path="/search" component={SearchPage} />
             <Route component={NotFoundPage} />
           </Switch>
         </Content>

@@ -2,13 +2,16 @@
 
 import { applyMiddleware, createStore, compose } from 'redux'
 import { createLogger } from 'redux-logger'
+import thunk from 'redux-thunk'
 
 import rootReducer from '../reducers'
 
 const isDevEnv = (): boolean => process.env.NODE_ENV === 'development'
 
 const initialState = {}
-const middlewares = []
+const middlewares = [
+  thunk,
+]
 
 /* eslint-disable no-underscore-dangle */
 const composeEnhancers = (isDevEnv()

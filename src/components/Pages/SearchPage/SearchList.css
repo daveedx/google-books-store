@@ -1,0 +1,48 @@
+.searchlist-container {
+  margin: 20px 0 !important;
+  border: 0;
+  background: transparent;
+}
+
+.ant-card-wider-padding .ant-card-body {
+  padding: 10px 0;
+}
+
+.ant-card-body .ant-card-grid {
+  background: white;
+  width: 23%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  padding-bottom: 0;
+}
+
+.ant-card-cover {
+  width: 128px;
+  height: 250px;
+  margin: 0 auto;
+}
+
+.ant-card-actions {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  height: 58px;
+}
+
+.ant-card-actions li {
+  float: none;
+}
+
+.ant-card-actions > li > span {
+  cursor: default;
+}
+
+.ant-card-actions > li > span:hover {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+h4 {
+  height: 42px;
+  overflow: hidden;
+  text-align: center;
+}
