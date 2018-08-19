@@ -2,7 +2,7 @@
 
 import React from 'react'
 import type { Node as ReactNode } from 'react'
-import { Button, Card, Tooltip } from 'antd'
+import { Card, Tooltip } from 'antd'
 
 import type { Book } from '../../../types'
 import { SALE_FOR_SALE } from '../../../types'
