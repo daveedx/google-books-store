@@ -26,6 +26,7 @@
   "homepage": "https://github.com/daveedx/google-books-store#readme",
   "dependencies": {
     "antd": "^3.8.1",
+    "axios": "^0.18.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-redux": "^5.0.7",
@@ -35,7 +36,8 @@
     "react-scripts": "1.1.4",
     "redux": "^4.0.0",
     "redux-actions": "^2.6.1",
-    "redux-logger": "^3.0.6"
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.6",
